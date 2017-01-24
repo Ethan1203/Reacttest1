@@ -98,6 +98,7 @@ userInput(userName, filterRepoName, isBelow20){
 //End Event 2
 
 render(){
+   //myState.store.set(this.state.stateIndex, this.state);
     return(
     <div>
         <fieldset>
@@ -114,7 +115,7 @@ render(){
         <fieldset>
         <legend>Event 2</legend>
         <SearchBar 
-        inputName = {this.state.inputName} 
+        userInput = {this.state.userInput} 
         btnClick = {this.btnClick} />
         </fieldset>
 <br/>

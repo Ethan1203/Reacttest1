@@ -7,4 +7,5 @@ class StateStore {
 }
 
 const myState = new StateStore();
+
 export default myState;
