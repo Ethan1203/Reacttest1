@@ -26,7 +26,7 @@ class GithubSearch extends React.Component {
             userRepos:[],
             stateIndex:0
         }
-         this.btnClick = this.btnClick.bind(this);
+        this.btnClick = this.btnClick.bind(this);
         //Event 1
         this.userNameChange = this.userNameChange.bind(this);
         this.checkboxChange = this.checkboxChange.bind(this);
@@ -40,7 +40,7 @@ class GithubSearch extends React.Component {
 
 //Event 1 
 userNameChange(e){
-    console.log(this.state);
+    console.log(e.target.value);
     this.setState(
         {   
             inputName: e.target.value,
@@ -68,7 +68,7 @@ btnClick(e){
 githubApi.getGithubAll(this.state.inputName).then(
 (result) => {
     let [user,repos] = result;
-console.log(user.data, repos.data);
+
 this.setState(
     {
         userInfo: {
@@ -79,6 +79,7 @@ this.setState(
         userRepos: repos.data,
         stateIndex: this.state.stateIndex + 1
 });
+console.log(user.data, repos.data);
 }
 );
 }
