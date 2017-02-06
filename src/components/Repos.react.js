@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-
-import RepoRow from './RepoRow';
+import DemoAction from'/src/components//DemoAction';
+import RepoRow from '/src/components/RepoRow.react';
 
 
 export default class Repos extends Component {

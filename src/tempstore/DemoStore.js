@@ -1,4 +1,4 @@
-import DemoDispatcher from '../dispatcher/DemoDispatcher';
+import DemoDispatcher from '/src/components/DemoDispacher';
 import EventEmitter from 'events.EventEmitter';
 import assign from 'object-assign';
 
@@ -51,4 +51,4 @@ DemoDispatcher.register(function(action){
 	}
 });
 
-module.exports = DemoStore;
+export default DemoStore;

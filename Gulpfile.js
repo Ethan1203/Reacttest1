@@ -1,6 +1,6 @@
-var gulp       = require('gulp');
-var browserify = require('gulp-browserify');
-var rename     = require('gulp-rename');
+let gulp       = require('gulp');
+let browserify = require('gulp-browserify');
+let rename     = require('gulp-rename');
 
 gulp.task("default", ["build"]);
 
@@ -10,5 +10,5 @@ gulp.task('build', function(){
 			transform: ["reactify"]
 		}))
 		.pipe(rename("bundle.js"))
-		.pipe(gulp.dest("./build"));
+		.pipe(gulp.dest("./src/build/"));
 });

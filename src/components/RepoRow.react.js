@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import DemoAction from'/src/components//DemoAction';
 
 export default class RepoRow extends Component{
     constructor(props){

@@ -1,12 +1,16 @@
-import DemoDispachrt from '../components/DemoDispacher';
+import DemoDispachrt from '/src/components/DemoDispacher';
 
-let DemoAction = {
+export const DemoAction = {
+	User(){
+		DemoDispatcher.dispatch({
+			actionType:"User"
+		});
+	},
 	RepoRow(){
 		DemoDispatcher.dispatch({
 			actionType: "RepoRow"
 		});
 	},
-
 	Repos(){
 		DemoDispatcher.dispatch({
 			actionType: "Repos"
@@ -21,7 +25,11 @@ let DemoAction = {
 		DemoDispatcher.dispatch({
 			actionType: "GithubSearch"
 		});
+	},
+	myState(){
+		DemoDispatcher.dispatch({
+			actionType: "StateStore"
+		});
 	}
 };
 
-module.exports = DemoAction;

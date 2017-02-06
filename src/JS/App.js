@@ -1,7 +1,7 @@
 import React from 'react';
-import DemoApp from '../components/DemoApp.react';
+import DemoApp from '/src/components/DemoApp.react';
 
 React.render(
-    <DemoApp />,
+    <GithubSearch />,
     document.getElementById("App")
 );
